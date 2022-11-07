@@ -4,14 +4,16 @@ import demo.items.Item;
 
 public class BasketDecorator extends ItemDecorator {
 
+    static final int FOUR = 4;
+
     public BasketDecorator(Item item) {
         super(item);
-        description = "decorated with basket.";
+        setDescription("decorated with basket.");
     }
 
     @Override
     public double price() {
-        return 4 + item.price();
+        return FOUR + getPrice();
     }
 
     @Override

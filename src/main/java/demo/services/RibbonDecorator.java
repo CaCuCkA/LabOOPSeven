@@ -3,14 +3,16 @@ package demo.services;
 import demo.items.Item;
 
 public class RibbonDecorator extends ItemDecorator {
+    final static int FORTY = 40;
+
     public RibbonDecorator(Item item) {
         super(item);
-        description = "decorated with a ribbon.";
+        setDescription("decorated with a ribbon.");
     }
 
     @Override
     public double price() {
-        return 40 + item.price();
+        return FORTY + getPrice();
     }
 
     @Override

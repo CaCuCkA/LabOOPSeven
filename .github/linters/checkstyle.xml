@@ -16,6 +16,15 @@
         <property name="eachLine" value="false"/>
     </module>
 
+    <module name="WhitespaceAfter">
+        <property name="tokens" value="COMMA, SEMI"/>
+    </module>
+
+    <module name="HiddenField">
+        <property name="ignoreSetter" value="true"/>
+        <property name="ignoreConstructorParameter" value="true"/>
+    </module>
+
 
     <!-- Checks that no file is more than 1500 lines long. -->
     <module name="FileLength">

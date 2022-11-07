@@ -16,12 +16,14 @@ public class Order {
     }
 
     public void setDeliverStrategy(Delivery delivery) {
-        System.out.println(delivery.getClass().getSuperclass().toString() + "is being used.");
+        System.out.println(delivery.getClass().getSuperclass().toString()
+                + "is being used.");
         this.delivery = delivery;
     }
 
     public void setPaymentMethod(Payments payment) {
-        System.out.println(payment.getClass().getSuperclass().toString() + "is being used");
+        System.out.println(payment.getClass().getSuperclass().toString()
+                + "is being used");
         this.payment = payment;
     }
 

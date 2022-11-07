@@ -1,14 +1,16 @@
 package demo.flowers;
 
 import demo.items.Item;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 
 @Getter
+@AllArgsConstructor
 public class Flower extends Item {
-    protected double sepalLength;
-    protected String color;
-    protected double price;
+    private double sepalLength;
+    private String color;
+    private double price;
 
 
     public Flower(FlowerColor color, double sepalLength, double price) {
@@ -20,6 +22,7 @@ public class Flower extends Item {
     private void setColor(FlowerColor color) {
         this.color = color.toString();
     }
+
     @Override
     public double price() {
         return price;

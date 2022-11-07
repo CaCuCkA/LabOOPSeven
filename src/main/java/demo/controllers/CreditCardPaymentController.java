@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path="/api/v1/payment-cc")
+@RequestMapping(path = "/api/v1/payment-cc")
 public class CreditCardPaymentController {
     @GetMapping
     public String whichPayment() {

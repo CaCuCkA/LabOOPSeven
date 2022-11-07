@@ -8,12 +8,13 @@ public class PaymentTest {
     private Payments creditCardPayment;
     private Payments paypalPayment;
     private double price;
+    final static double NUMBER = 120.4;
 
     @BeforeEach
     public void init() {
         creditCardPayment = new CreditCardPaymentStrategy();
         paypalPayment = new PayPalPaymentStrategy();
-        price = 120.4;
+        price = NUMBER;
     }
 
     @Test
