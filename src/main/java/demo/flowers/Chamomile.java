@@ -8,6 +8,6 @@ public class Chamomile extends Flower {
 
     @Override
     public double price() {
-        return price;
+        return getPrice();
     }
 }
