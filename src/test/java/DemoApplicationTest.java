@@ -4,8 +4,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest(classes = DemoApplicationTest.class)
 class DemoApplicationTest {
 
-    @Test
-    void contextLoads() {
-    }
+//    @Test
+//    void contextLoads() {
+//    }
 
 }
